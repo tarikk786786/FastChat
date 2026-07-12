@@ -1,4 +1,6 @@
 # FastChat
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/tarikk786786/FastChat)
+
 | [**Demo**](https://lmarena.ai/) | [**Discord**](https://discord.gg/6GXcFg3TH8) | [**X**](https://x.com/lmsysorg) |
 
 FastChat is an open platform for training, serving, and evaluating large language model based chatbots.
