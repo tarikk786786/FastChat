@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: fastchat-app
+    env: python
+    buildCommand: bash render_build.sh
+    startCommand: bash start.sh
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.10.12
