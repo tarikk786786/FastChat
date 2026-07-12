@@ -1,6 +1,7 @@
 services:
   - type: web
     name: fastchat-app
+    plan: free
     env: python
     buildCommand: bash render_build.sh
     startCommand: bash start.sh
