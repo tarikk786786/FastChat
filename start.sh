@@ -8,8 +8,8 @@ python3 -m fastchat.serve.controller --host 0.0.0.0 --port 21001 &
 sleep 5
 
 # Start the Model Worker with a tiny model to fit into Render's free tier memory
-echo "Starting FastChat Model Worker (sshleifer/tiny-gpt2)..."
-python3 -m fastchat.serve.model_worker --model-path sshleifer/tiny-gpt2 --model-names "tiny-gpt2,gpt-3.5-turbo" --host 0.0.0.0 --port 21002 --controller-address http://127.0.0.1:21001 &
+echo "Starting FastChat Mock Model Worker..."
+python3 -m fastchat.serve.mock_worker --host 0.0.0.0 --port 21002 --controller-address http://127.0.0.1:21001 &
 
 # Wait for worker to register
 sleep 5
