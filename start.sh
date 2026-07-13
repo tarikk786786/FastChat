@@ -15,8 +15,8 @@ python3 -m fastchat.serve.model_worker --model-path sshleifer/tiny-gpt2 --model-
 sleep 5
 
 # Start the OpenAI API Server in the background
-echo "Starting FastChat OpenAI API Server..."
-python3 -m fastchat.serve.openai_api_server --host 0.0.0.0 --port 8000 --controller-address http://127.0.0.1:21001 &
+# echo "Starting FastChat OpenAI API Server..."
+# python3 -m fastchat.serve.openai_api_server --host 0.0.0.0 --port 8000 --controller-address http://127.0.0.1:21001 &
 
 # Start the Gradio Web Server (runs on the port Render exposes)
 echo "Starting FastChat Gradio Web Server on port $PORT..."
